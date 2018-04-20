@@ -219,6 +219,9 @@ async def on_message(message):
                                                    emb.add_field(name="cookies and milk", value="gives you cookies and milk", inline=True)
                                                    emb.add_field(name="+info", value="gives you server info", inline=True)
                                                    emb.add_field(name="+rules", value="gives you the rules", inline=True)
+                                                   emb.add_field(name="+invite", value="N/A", inline=True)
                                                    await client.send_message(message.channel, embed=emb)
-  
+
+    if message.content.upper().startswith('+INVITE'):
+        await client.send_message(message.channel, " Here's your invite code! https://discord.gg/jthWPwc")
 client.run("NDMyNjU3MjQ5MzM3NDc1MDky.Dawe_Q.o-3ScxXYvzvE9Rt8RuV5A4b0E7k")
