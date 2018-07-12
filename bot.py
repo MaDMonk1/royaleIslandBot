@@ -184,7 +184,7 @@ async def on_message(message):
         if randnum == 6:
             await client.send_message(message.channel, "<@%s> :8ball: Snobby Shores :8ball:" % (userID))
         if randnum == 7:
-            await client.send_message(message.channel, "<@%s> :8ball: Dusty Depot :8ball:" % (userID))
+            await client.send_message(message.channel, "<@%s> :8ball: Dusty Divot :8ball:" % (userID))
         if randnum == 8:
             await client.send_message(message.channel, "<@%s> :8ball: Wailing Woods :8ball:" % (userID))
         if randnum == 9:
@@ -198,17 +198,15 @@ async def on_message(message):
         if randnum == 13:
             await client.send_message(message.channel, "<@%s> :8ball: Haunted Hills :8ball:" % (userID))
         if randnum == 14:
-            await client.send_message(message.channel, "<@%s> :8ball: Moisty Mire :8ball:" % (userID))
+            await client.send_message(message.channel, "<@%s> :8ball: Lazy Links :8ball:" % (userID))
         if randnum == 15:
-            await client.send_message(message.channel, "<@%s> :8ball: Anarchy Acress :8ball:" % (userID))
+            await client.send_message(message.channel, "<@%s> :8ball: Paradise Palms :8ball:" % (userID))
         if randnum == 16:
             await client.send_message(message.channel, "<@%s> :8ball: Lonely Lodge :8ball:" % (userID))
         if randnum == 17:
             await client.send_message(message.channel, "<@%s> :8ball: Fatal Fields :8ball:" % (userID))
         if randnum == 18:
             await client.send_message(message.channel, "<@%s> :8ball: Junk Junction :8ball:" % (userID))
-        if randnum == 19:
-            await client.send_message(message.channel, "<@%s> :8ball: No Where :8ball:" % (userID))
     if message.content.upper().startswith('+CMDS'):
                                                    args = message.content.split(" ")
                                                    emb = (discord.Embed(description=None, colour=0x00ff00))
