@@ -1,1 +1,1 @@
-# royaleIslandBot
+# strivebot
