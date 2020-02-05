@@ -16,7 +16,7 @@ bypass_list = [" "]
 @client.event
 async def on_ready():
   print("Management || Bot is Online and ready.")
-  await client.change_presence(game=discord.Game(name="The Royale Island | +cmds"))
+  await client.change_presence(game=discord.Game(name="The Strive Boi | +cmds"))
 
 @client.event
 async def on_member_join(member):
@@ -24,13 +24,18 @@ async def on_member_join(member):
   await client.add_roles(member, role)
   emb = (discord.Embed(description=None, colour=0x3DF270))
   welcome = client.get_channel("432671080382201857")
-  emb.add_field(name="New Member", value="<@%s>! Welcome to The Royale IslandIn the Rules channel you can see the rules." % (member.id), inline=False)
-  emb.add_field(name="**HELP** ", value= "In the Looking for partner(s) category you can find people to play with.", inline=False)
-  emb.add_field(name="**HELP** ", value= "In the fortnite-stats-check you can use !ftn (Username) to see your Fortnite stats. ", inline=False)
-  emb.add_field(name="**HELP** ", value= "To Get your Fortnite Rank, ask staff to use +rank (Rank) Bronze,Silver,Gold,Platnium,Diamond,Ruby,Master. ", inline=False)
-  emb.add_field(name="**HELP** ", value= "If you have any Questions Contact a '@Staff' Member. ", inline=False)
-  emb.add_field(name="**HELP** ", value= "If you want help, do +help. ", inline=False)
-  emb.add_field(name="**HELP** ", value= "Enjoy your Stay! ", inline=False)
+  emb.add_field(name="New Member", value="Hey <@%s>! Welcome to StriveGaming ! :tada: :hugging:", inline=True)
+  emb.add_field(name="Rules", value="Make sure to check out the #『⛔』rules to have the best possible experience in the server. :heart:", inline=True)
+  emb.add_field(name="LFC", value="It would be really appriciated if you'd go upvote our team on: {https://lookingforclan.com/clans/strive-gaming%7D :thumbsup:", inline=True)
+  emb.add_field(name="Sponsors", value="Be sure to check out our sponsors! (<#『🎮』fatal-grips  & <#『🥤』rogue-energy > ) :blue_heart:", inline=True)
+  emb.add_field(name="Discount", value="Code: StriveFN at checkout when purchasing products.", inline=True) 
+  emb.add_field(name="Merch", value="Go check out our official #『:beginner:』strive-merch   ! :shirt:", inline=True)
+  emb.add_field(name="SOCIAL MEDIA", value="", inline=True)
+  emb.add_field(name="Youtube:", value="https://www.youtube.com/channel/UCLgTgOFbb0GBouCyuXjzH8w?view_as=subscriber%7D", inline=True)
+  emb.add_field(name="Instagram:", value="https://www.instagram.com/strivegaming_/?hl=en%7D", inline=True)
+  emb.add_field(name="Twitter:", value="https://twitter.com/StriveClanFN%7D", inline=True)
+  emb.add_field(name="HOW TO JOIN: -->", value="*Go to #『❗❗』react-for-role  And react for what games you play and your region!", inline=True)
+  emb.add_field(name="Item Shop", value="USE CODE STRIVEGAMING IN THE FORTNITE SHOP !!!", inline=True)
   await client.send_message(welcome, embed=emb)
 
 @client.event
@@ -53,7 +58,7 @@ async def on_message(message):
                                                     embed.add_field(name="Members", value=len(message.server.members))
                                                     await client.send_message(message.channel, embed=embed)
     if message.content.upper().startswith('+ANNOUNCE'):
-        if "421682342206242836" in [role.id for role in message.author.roles]:
+        if "618521786379796480" in [role.id for role in message.author.roles]:
                                                                              args = message.content.split(" ")
                                                                              chan = client.get_channel("421679943546568704")
                                                                              embed = (discord.Embed(description=None, colour=0x00ff00))
